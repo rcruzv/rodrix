@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Rodrigo da Cruz Vieira" />
+    <title>Rodrix</title>
+  </head>
+  <body class="mat-typography">
+    <input id="hamburger" class="hamburger" type="checkbox" />
+    <label for="hamburger" class="hamburger">
+      <i></i>
+      <span class="burguer">
+        <span>close</span>
+        <span>menu</span>
+      </span>
+    </label>
+    <nav id="menu">
+      <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+      <a class="nav-link active" aria-current="page" routerLink="/contact-us">Contact us</a>
+      <a class="nav-link active" aria-current="page" routerLink="/dashboard">Dashboard</a>
+      <a class="nav-link" routerLink="/login">Login</a>
+    </nav>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </body>
+</html>

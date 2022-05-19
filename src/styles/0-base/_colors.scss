@@ -1,0 +1,19 @@
+@function getColor($color) {
+  @if (lightness($main) > 50) {
+      @return rgba(black, .8);
+  } @else {
+      @return rgba(white, .8);
+  }
+}
+
+
+// $red: random(256)-1;
+// $green: random(256)-1;
+// $blue: random(256)-1;
+// $main: rgb($red, $green, $blue);
+
+$main: #0070cc;
+$dark: mix(black, $main, 20%);
+
+// font-color
+$text: getColor($main);
