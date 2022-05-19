@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { AppLayoutDashboardComponent } from './app-layout-dashboard/app-layout-dashboard.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './app-layout/home/home.component';
 import { LoginComponent } from './login/login.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactUsComponent } from './app-layout/contact-us/contact-us.component';
 
 const routes: Routes = [
   {

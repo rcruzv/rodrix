@@ -1,14 +1,5 @@
-@import "../../styles/0-base/colors";
-@import "../../styles/3-helpers/mixins";
 @import "../../styles/2-modules/hamburger";
 @import "../../styles/2-modules/tabs";
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 
 %sidebar-hover {
   @include alpha-attribute('background-color', rgba($main, 0.6), white);
@@ -34,13 +25,11 @@ nav.primary {
     width: 58px;
     transition: width 246ms .5s ease;
   }
-
   > ul {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
   }
-
   li {
     font-weight: 400;
     position: relative;
@@ -64,7 +53,6 @@ nav.primary {
       @include alpha-attribute('color', rgba($text, 0.8), white);
       text-decoration: none;
     }
-
   }
   .icon {
     height: 20px;
@@ -85,17 +73,14 @@ nav.primary {
   border-left: 1px solid black;
   @include alpha-attribute('border-left-color', rgba($main, .9), black);
   overflow: hidden;
-
   li {
     @include alpha-attribute('color', rgba($text, .9), black);
     max-height: 100px;
     transition: max-height .1s;
-
     @include media-sm {
       max-height: 0px;
       transition: max-height .5s .5s;
     }
-
     a {
       text-transform: initial;
       display: block;
@@ -114,7 +99,6 @@ nav.primary {
   right: 0;
   @include alpha-attribute('color', rgba($text, 0.9), white);
   z-index: 99999;
-
   > section {
     display: flex;
     flex-direction: row-reverse;
@@ -142,7 +126,6 @@ nav.primary {
     font-size: .8em;
     display: flex;
     justify-content: flex-end;
-
     a {
       padding: 0 .5em;
       color: $text;

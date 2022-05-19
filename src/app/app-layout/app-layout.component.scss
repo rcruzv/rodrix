@@ -1,4 +1,3 @@
-@import '../../styles/0-base/colors';
 @import "../../styles/2-modules/hamburger";
 
 $timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -41,7 +40,7 @@ nav {
     margin: 0.5em 0;
     padding: 0.2em 2em;
     font-size: 1.5em;
-    color: white;
+    color: $text;
     text-decoration: none;
     font-weight: 500;
     transform: translateX(-100%);
@@ -54,7 +53,7 @@ nav {
     }
     &:hover,
     &:focus {
-      color: black;
+      color: $darkest;
     }
   }
 }

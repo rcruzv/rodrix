@@ -1,10 +1,6 @@
 @import '../3-helpers/mixins';
 @import '../0-base/colors';
 
-$hamburger: $text;
-
-/** hamburger */
-
 input.hamburger {
   display: none;
   &:checked {
@@ -33,7 +29,7 @@ input.hamburger {
         }
       }
       span:nth-child(1) {
-        color: $hamburger;
+        color: $text;
         width: 100%;
       }
       span:nth-child(2) {
@@ -69,7 +65,7 @@ label.hamburger {
       width: 0;
     }
     span:nth-child(2) {
-      color: $hamburger;
+      color: $text;
       width: 100%;
     }
   }
@@ -78,7 +74,7 @@ label.hamburger {
     width: 100%;
     height: 2px;
     top: 50%;
-    background-color: $hamburger;
+    background-color: $text;
     pointer-events: auto;
     transition-duration: .35s;
     transition-delay: .35s;
@@ -89,7 +85,7 @@ label.hamburger {
       width: 100%;
       height: 2px;
       left: 50%;
-      background-color: $hamburger;
+      background-color: $text;
       content: "";
       transition: transform 0.35s;
       transform-origin: 50% 50%;

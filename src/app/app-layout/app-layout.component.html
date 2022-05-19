@@ -8,8 +8,14 @@
     <title>Rodrix</title>
   </head>
   <body class="mat-typography">
-    <input id="hamburger" class="hamburger" type="checkbox" />
-    <label for="hamburger" class="hamburger">
+    <input
+      id="hamburger"
+      class="hamburger"
+      type="checkbox"
+      [(ngModel)]="checked"
+    />
+    <label
+      for="hamburger" class="hamburger">
       <i></i>
       <span class="burguer">
         <span>close</span>
@@ -17,12 +23,12 @@
       </span>
     </label>
     <nav id="menu">
-      <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
-      <a class="nav-link active" aria-current="page" routerLink="/contact-us">Contact us</a>
-      <a class="nav-link active" aria-current="page" routerLink="/dashboard">Dashboard</a>
-      <a class="nav-link" routerLink="/login">Login</a>
+      <a class="nav-link active" aria-current="page" (click)="closeMenu()" routerLink="/" >Início</a>
+      <a class="nav-link active" aria-current="page" (click)="closeMenu()" routerLink="/contact-us">Contato</a>
+      <a class="nav-link active" aria-current="page" (click)="closeMenu()" routerLink="/dashboard">Painel</a>
+      <a class="nav-link" routerLink="/login">Entrar</a>
     </nav>
-    <main>
+    <main (click)="closeMenu()">
       <router-outlet></router-outlet>
     </main>
   </body>

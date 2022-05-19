@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-layout.component.scss']
 })
 export class AppLayoutComponent implements OnInit {
+  checked: Boolean = false;
+
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  closeMenu(){
+    this.checked = false;
   }
 
 }

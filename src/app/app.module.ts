@@ -1,26 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppLayoutComponent } from './app-layout/app-layout.component';
-import { HomeComponent } from './home/home.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AppLayoutDashboardComponent } from './app-layout-dashboard/app-layout-dashboard.component';
+import { AppComponent } from './app.component';
+import { ContactUsComponent } from './app-layout/contact-us/contact-us.component';
+import { HomeComponent } from './app-layout/home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
     AppLayoutComponent,
-    HomeComponent,
+    AppLayoutDashboardComponent,
+    AppComponent,
     ContactUsComponent,
-    AppLayoutDashboardComponent
+    HomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
