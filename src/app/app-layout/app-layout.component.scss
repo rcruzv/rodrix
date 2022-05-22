@@ -1,4 +1,4 @@
-@import "../../styles/2-modules/hamburger";
+@import "../../styles/2-modules/_hamburger.scss";
 
 $timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 $nav-width-desktop: 40em;
@@ -10,9 +10,9 @@ nav {
   top: 0;
   left: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 10;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
   transform: translate3d(0, 0, 0); /* material acceleration */
