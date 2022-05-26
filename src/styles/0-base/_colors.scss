@@ -1,12 +1,14 @@
 @function getColor($color) {
   @if (lightness($main) > 50) {
-      @return rgba(black, .8);
+    @return rgba(black, 0.8);
   } @else {
-      @return rgba(white, .8);
+    @return rgba(white, 0.8);
   }
 }
 
 $main: #0070cc;
+$lightest: mix(white, $main, 50%);
+$light: mix(white, $main, 20%);
 $dark: mix(black, $main, 20%);
 $darkest: mix(black, $main, 50%);
 $text: getColor($main);
