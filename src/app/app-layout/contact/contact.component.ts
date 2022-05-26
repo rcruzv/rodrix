@@ -4,7 +4,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
   contactForm = this.fb.group({
@@ -14,7 +14,7 @@ export class ContactComponent {
   });
   hasUnitNumber = false;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder) { }
 
   onSubmit(): void {
     alert('Thanks!');

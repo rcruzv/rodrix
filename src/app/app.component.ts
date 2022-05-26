@@ -6,11 +6,11 @@ import {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.css'],
   animations: [
     trigger('slide', [
-      state('left', style({transform: 'translateX(0)'})),
-      state('right', style({transform: 'translateX(-50%'})),
+      state('left', style({ transform: 'translateX(0)' })),
+      state('right', style({ transform: 'translateX(-50%' })),
       transition('* => *', animate(300))
     ])
   ]
