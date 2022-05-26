@@ -1,0 +1,30 @@
+{
+    "cSpell.words": [
+        "devkit",
+        "rodrix",
+        "signin",
+        "stackblitz",
+        "tailwindcss",
+        "youtube"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#e1d38a",
+        "activityBar.activeBorder": "#279886",
+        "activityBar.background": "#e1d38a",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#279886",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "sash.hoverBorder": "#e1d38a",
+        "statusBar.background": "#d7c461",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#cdb538",
+        "statusBarItem.remoteBackground": "#d7c461",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#d7c461",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#d7c46199",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#d7c461"
+}
