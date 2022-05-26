@@ -11,30 +11,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /* Angular Flex Layout */
 import { FlexLayoutModule } from '@angular/flex-layout';
 /* Components */
-import { AppLayoutComponent } from './app-layout/app-layout.component';
-import { AppLayoutDashboardComponent } from './app-layout-dashboard/app-layout-dashboard.component';
-import { HomeComponent } from './app-layout/home/home.component';
-import { ContactComponent } from './app-layout/contact/contact.component';
-import { LogInComponent } from './app-layout-user/log-in/log-in.component';
-import { RegisterComponent } from './app-layout-user/register/register.component';
-import { AppLayoutUserComponent } from './app-layout-user/app-layout-user.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppLayoutComponent,
-    AppLayoutDashboardComponent,
-    HomeComponent,
-    LogInComponent,
-    RegisterComponent,
-      AppLayoutUserComponent,
-      ContactComponent
-   ],
+    DashboardComponent
+  ],
   imports: [
     BrowserModule,
     [FormsModule, ReactiveFormsModule],
