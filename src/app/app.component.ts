@@ -17,9 +17,5 @@ import {
 })
 export class AppComponent {
   title = 'rodrix';
-
-  public activePane: PaneType = 'left';
-  public isLeftVisible = true;
 }
 
-type PaneType = 'left' | 'right';
