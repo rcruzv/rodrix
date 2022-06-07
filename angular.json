@@ -109,5 +109,8 @@
       }
     }
   },
-  "defaultProject": "rodrix"
+  "defaultProject": "rodrix",
+  "cli": {
+    "analytics": "3f4ba4db-5e71-418b-934c-b1bdade8c0c5"
+  }
 }
