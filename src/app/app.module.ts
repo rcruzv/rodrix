@@ -1,25 +1,34 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+import { AppComponent } from './app.component';
+
 /* Routing */
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
 /* Angular Material */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 /* FormsModule */
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 /* Angular Flex Layout */
 import { FlexLayoutModule } from '@angular/flex-layout';
+
+/* No Layout views */
+import { IndexComponent } from './views/index/index.component';
+
 /* Components */
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSelectModule } from '@angular/material/select';
-import { MatRadioModule } from '@angular/material/radio';
-import { MatCardModule } from '@angular/material/card';
+import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
+import { FooterComponent } from './components/footers/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    IndexComponent,
+    IndexNavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,11 +37,6 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     AngularMaterialModule,
     FlexLayoutModule,
-    MatInputModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatCardModule,
     ReactiveFormsModule,
   ],
   providers: [],
