@@ -3,6 +3,8 @@
         "codelyzer",
         "deeppurple",
         "devkit",
+        "fontawesome",
+        "fortawesome",
         "navbars",
         "rodrix",
         "signin",
@@ -28,7 +30,9 @@
         "titleBar.activeBackground": "#d7c461",
         "titleBar.activeForeground": "#15202b",
         "titleBar.inactiveBackground": "#d7c46199",
-        "titleBar.inactiveForeground": "#15202b99"
+        "titleBar.inactiveForeground": "#15202b99",
+        "sideBar.border": "#e1d38a",
+        "tab.activeBorder": "#e1d38a"
     },
     "peacock.color": "#d7c461"
 }

@@ -22,6 +22,7 @@ import { IndexComponent } from './views/index/index.component';
 /* Components */
 import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
 import { FooterComponent } from './components/footers/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { FooterComponent } from './components/footers/footer/footer.component';
     AngularMaterialModule,
     FlexLayoutModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
