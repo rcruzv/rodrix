@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 /* No Layout views */
 import { IndexComponent } from './views/index/index.component';
+import { IndexHeaderComponent } from './views/index/index-header/index-header.component';
 
 /* Components */
 import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
@@ -25,6 +26,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [
     AppComponent,
     IndexComponent,
+    IndexHeaderComponent,
     IndexNavbarComponent,
     FooterComponent,
   ],
