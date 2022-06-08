@@ -13,9 +13,6 @@ import { AngularMaterialModule } from './angular-material.module';
 /* FormsModule */
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-/* Angular Flex Layout */
-import { FlexLayoutModule } from '@angular/flex-layout';
-
 /* No Layout views */
 import { IndexComponent } from './views/index/index.component';
 
@@ -37,7 +34,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    FlexLayoutModule,
     ReactiveFormsModule,
     FontAwesomeModule,
   ],

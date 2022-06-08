@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FooterComponent } from 'src/app/components/footers/footer/footer.component';
 
 @Component({
   selector: 'app-index',
