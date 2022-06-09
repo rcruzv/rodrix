@@ -18,7 +18,6 @@ import { IndexComponent } from './views/index/index.component';
 import { IndexHeaderComponent } from './views/index/index-header/index-header.component';
 
 /* Components */
-import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
 import { FooterComponent } from './components/footers/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -27,7 +26,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppComponent,
     IndexComponent,
     IndexHeaderComponent,
-    IndexNavbarComponent,
     FooterComponent,
   ],
   imports: [
