@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
 import { AppComponent } from './app.component';
 
 /* Routing */
@@ -19,7 +18,12 @@ import { IndexHeaderComponent } from './views/index/index-header/index-header.co
 
 /* Components */
 import { FooterComponent } from './components/footers/footer/footer.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+/* Font Awesome */
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -41,4 +45,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(fas, far, fab);
+  }
+}
+

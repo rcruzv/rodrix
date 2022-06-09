@@ -20,20 +20,46 @@
             <sup class="lowercase text-xl">(Rodrix)</sup>
           </span>
         </h1>
+
         <div
           class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"
         ></div>
+        <!-- Briefcase -->
         <p
           class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"
         >
-          <fa-icon [icon]="faBriefcase" class="text-sky-700 mr-2"></fa-icon>
+          <fa-icon
+            [icon]="['fas', 'briefcase']"
+            class="text-sky-700 mx-4 w-5"
+          ></fa-icon>
           Full Stack Developer
         </p>
+        <!-- Location -->
         <p
-          class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"
+          class="pt-2 text-sky-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start"
         >
-          <fa-icon [icon]="faLocationDot" class="text-sky-700"></fa-icon>
-          Your Location - 25.0000° N, 71.0000° W
+          <fa-icon
+            [icon]="['fas', 'location-dot']"
+            class="text-sky-700 mx-4 w-5"
+          ></fa-icon>
+          São Paulo/SP
+        </p>
+        <!-- Age -->
+        <p
+          class="pt-2 text-sky-500 text-xs lg:text-sm flex items-center justify-center lg:justify-start"
+        >
+          <fa-icon
+            [icon]="['fas', 'baby-carriage']"
+            class="text-sky-700 mx-4 w-5"
+          ></fa-icon>
+          <a
+            title="My e-mail"
+            href="mailto:cvieira.rodrigo@gmail.com"
+            class="text-sky-700"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          </a>
         </p>
         <p class="pt-8 text-sm">
           Totally optional short description about yourself, what you do and so
@@ -44,7 +70,7 @@
           <button
             class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full"
           >
-            <fa-icon [icon]="faFingerprint"></fa-icon>
+            <fa-icon [icon]="['fas', 'fingerprint']"></fa-icon>
             Get In Touch
           </button>
         </div>
@@ -58,7 +84,7 @@
             href="#"
             data-tippy-content="@linkedin_handle"
           >
-            <fa-icon [icon]="faLinkedin"></fa-icon>
+            <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
           </a>
           <a
             title="Facebook"
@@ -66,7 +92,7 @@
             href="#"
             data-tippy-content="@facebook_handle"
           >
-            <fa-icon [icon]="faFacebook"></fa-icon>
+            <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
           </a>
           <a
             title="Twitter"
@@ -74,7 +100,7 @@
             href="#"
             data-tippy-content="@twitter_handle"
           >
-            <fa-icon [icon]="faTwitter"></fa-icon>
+            <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
           </a>
           <a
             title="GitHub"
@@ -82,7 +108,7 @@
             href="#"
             data-tippy-content="@github_handle"
           >
-            <fa-icon [icon]="faGithub"></fa-icon>
+            <fa-icon [icon]="['fab', 'github']"></fa-icon>
           </a>
           <a
             title="Instagram"
@@ -90,7 +116,7 @@
             href="#"
             data-tippy-content="@instagram_handle"
           >
-            <fa-icon [icon]="faInstagram"></fa-icon>
+            <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
           </a>
           <a
             title="Youtube"
@@ -98,7 +124,7 @@
             href="#"
             data-tippy-content="@youtube_handle"
           >
-            <fa-icon [icon]="faYoutube"></fa-icon>
+            <fa-icon [icon]="['fab', 'youtube']"></fa-icon>
           </a>
         </div>
       </div>
