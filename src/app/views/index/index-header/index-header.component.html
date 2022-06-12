@@ -1,151 +1,119 @@
-<section class="relative pt-16 items-center flex h-screen bg-sky-700">
+<section
+  class="max-w-4xl text-sky-500 flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
+>
+  <!--Main Col-->
   <div
-    class="max-w-5xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
+    id="profile"
+    class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
   >
-    <!--Main Col-->
-    <div
-      id="profile"
-      class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
-    >
-      <div class="p-4 md:p-12 text-center lg:text-left">
-        <!-- Image for mobile view-->
-        <div
-          class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center bg-[url('assets/img/rodrix_photo.jpg')]"
-        ></div>
+    <div class="p-4 md:p-12 text-center lg:text-left">
+      <!-- Image for mobile view-->
+      <div
+        class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center bg-[url('assets/img/rodrix_photo.jpg')]"
+      ></div>
 
-        <h1 class="text-3xl font-bold pt-8 lg:pt-0 uppercase">
-          Hi there,I'm
-          <span class="text-sky-500">
-            Rodrigo
-            <sup class="lowercase text-xl">(Rodrix)</sup>
-          </span>
-        </h1>
+      <h1 class="text-3xl text-sky-900 font-bold pt-8 lg:pt-0">
+        Rodrigo Vieira
+      </h1>
+      <div
+        class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-sky-500 opacity-25"
+      ></div>
+      <p
+        class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"
+      >
+        <fa-icon [icon]="['fas', 'briefcase']" class="mx-5"></fa-icon>
+        Full Stack Developer
+      </p>
+      <p
+        class="pt-2 text-xs lg:text-sm flex items-center justify-center lg:justify-start"
+      >
+        <fa-icon [icon]="['fas', 'baby-carriage']" class="mx-5"></fa-icon>
+        40 Anos
+      </p>
+      <p class="pt-8 text-sm">
+        Olá! Meu nome é Rodrigo Vieira, sou um desenvolvedor Full Stack, que
+        gosta de desenvolver e aprender novas tecnologias.
+      </p>
 
-        <div
-          class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"
-        ></div>
-        <!-- Briefcase -->
-        <p
-          class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"
+      <div class="pt-12 pb-8">
+        <button
+          type="button"
+          mat-stroked-button
+          class="hover:bg-sky-200 hover:text-sky-900"
         >
-          <fa-icon
-            [icon]="['fas', 'briefcase']"
-            class="text-sky-700 mx-4 w-5"
-          ></fa-icon>
-          Full Stack Developer
-        </p>
-        <!-- Location -->
-        <p
-          class="pt-2 text-sky-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start"
-        >
-          <fa-icon
-            [icon]="['fas', 'location-dot']"
-            class="text-sky-700 mx-4 w-5"
-          ></fa-icon>
-          São Paulo/SP
-        </p>
-        <!-- Age -->
-        <p
-          class="pt-2 text-sky-500 text-xs lg:text-sm flex items-center justify-center lg:justify-start"
-        >
-          <fa-icon
-            [icon]="['fas', 'baby-carriage']"
-            class="text-sky-700 mx-4 w-5"
-          ></fa-icon>
-          <a
-            title="My e-mail"
-            href="mailto:cvieira.rodrigo@gmail.com"
-            class="text-sky-700"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          </a>
-        </p>
-        <p class="pt-8 text-sm">
-          Totally optional short description about yourself, what you do and so
-          on.
-        </p>
+          <fa-icon [icon]="['fas', 'envelope']" class="mr-2"></fa-icon>
+          Entre em contato
+        </button>
+      </div>
 
-        <div class="pt-12 pb-8">
-          <button
-            class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full"
-          >
-            <fa-icon [icon]="['fas', 'fingerprint']"></fa-icon>
-            Get In Touch
-          </button>
-        </div>
-
-        <div
-          class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"
+      <div
+        class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"
+      >
+        <button
+          type="button"
+          matTooltip="Facebook"
+          matTooltipPosition="above"
+          mat-fab
+          aria-label="Button with a Facebook icon"
         >
-          <a
-            title="LinkedIn"
-            class="link"
-            href="#"
-            data-tippy-content="@linkedin_handle"
-          >
-            <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
-          </a>
-          <a
-            title="Facebook"
-            class="link"
-            href="#"
-            data-tippy-content="@facebook_handle"
-          >
-            <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
-          </a>
-          <a
-            title="Twitter"
-            class="link"
-            href="#"
-            data-tippy-content="@twitter_handle"
-          >
-            <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
-          </a>
-          <a
-            title="GitHub"
-            class="link"
-            href="#"
-            data-tippy-content="@github_handle"
-          >
-            <fa-icon [icon]="['fab', 'github']"></fa-icon>
-          </a>
-          <a
-            title="Instagram"
-            class="link"
-            href="#"
-            data-tippy-content="@instagram_handle"
-          >
-            <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
-          </a>
-          <a
-            title="Youtube"
-            class="link"
-            href="#"
-            data-tippy-content="@youtube_handle"
-          >
-            <fa-icon [icon]="['fab', 'youtube']"></fa-icon>
-          </a>
-        </div>
+          <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
+        </button>
+
+        <button
+          type="button"
+          matTooltip="Twitter"
+          matTooltipPosition="above"
+          mat-fab
+          aria-label="Button with a Twitter icon"
+        >
+          <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+        </button>
+
+        <button
+          type="button"
+          matTooltip="Github"
+          matTooltipPosition="above"
+          mat-fab
+          aria-label="Button with a Github icon"
+        >
+          <fa-icon [icon]="['fab', 'github']"></fa-icon>
+        </button>
+
+        <button
+          type="button"
+          matTooltip="Instagram"
+          matTooltipPosition="above"
+          mat-fab
+          aria-label="Button with a Instagram icon"
+        >
+          <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
+        </button>
+
+        <button
+          type="button"
+          matTooltip="YouTube"
+          matTooltipPosition="above"
+          mat-fab
+          aria-label="Button with a YouTube icon"
+        >
+          <fa-icon [icon]="['fab', 'youtube']"></fa-icon>
+        </button>
       </div>
     </div>
+  </div>
 
-    <!--Img Col-->
-    <div class="w-full lg:w-2/5">
-      <!-- Big profile image for side bar (desktop) -->
-      <img
-        title="Rodrigo da Cruz Vieira"
-        src="assets/img/rodrix_photo.jpg"
-        class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
-      />
-    </div>
+  <!--Img Col-->
+  <div class="w-full h-5/6 flex flex-col lg:w-2/5">
+    <!-- Big profile image for side bar (desktop) -->
+    <img
+      title="Foto de perfil"
+      src="assets/img/rodrix_photo.jpg"
+      class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block object-cover min-h-0"
+    />
+  </div>
 
-    <!-- Pin to top right corner -->
-    <div class="absolute top-0 right-0 h-12 w-18 p-4">
-      <button type="button" class="js-change-theme focus:outline-none">
-        🌙
-      </button>
-    </div>
+  <!-- Pin to top right corner -->
+  <div class="absolute top-0 right-0 h-12 w-18 p-4">
+    <button type="button" class="js-change-theme focus:outline-none">🌙</button>
   </div>
 </section>
-170
