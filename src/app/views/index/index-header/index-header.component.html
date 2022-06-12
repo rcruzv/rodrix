@@ -21,13 +21,25 @@
       <p
         class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"
       >
-        <fa-icon [icon]="['fas', 'briefcase']" class="mx-5"></fa-icon>
+        <fa-icon
+          [icon]="['fas', 'briefcase']"
+          [fixedWidth]="true"
+          [pull]="'left'"
+          matTooltip="O que faço"
+          matTooltipPosition="left"
+        ></fa-icon>
         Full Stack Developer
       </p>
       <p
-        class="pt-2 text-xs lg:text-sm flex items-center justify-center lg:justify-start"
+        class="pt-2 text-base flex items-center justify-center lg:justify-start"
       >
-        <fa-icon [icon]="['fas', 'baby-carriage']" class="mx-5"></fa-icon>
+        <fa-icon
+          [icon]="['fas', 'baby-carriage']"
+          [fixedWidth]="true"
+          [pull]="'left'"
+          matTooltip="Minha idade"
+          matTooltipPosition="left"
+        ></fa-icon>
         40 Anos
       </p>
       <p class="pt-8 text-sm">
@@ -35,69 +47,98 @@
         gosta de desenvolver e aprender novas tecnologias.
       </p>
 
-      <div class="pt-12 pb-8">
-        <button
-          type="button"
-          mat-stroked-button
-          class="hover:bg-sky-200 hover:text-sky-900"
-        >
-          <fa-icon [icon]="['fas', 'envelope']" class="mr-2"></fa-icon>
-          Entre em contato
-        </button>
-      </div>
-
       <div
         class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"
       >
-        <button
-          type="button"
+        <a
+          aria-label="Vá para a sessão de contato do currículo"
+          matTooltip="Entre em contato"
+          matTooltipPosition="above"
+          href="#"
+          mat-button
+        >
+          <fa-icon
+            [icon]="['fas', 'fingerprint']"
+            size="2x"
+            [fixedWidth]="true"
+            [pulse]="true"
+          ></fa-icon>
+        </a>
+
+        <a
+          aria-label="Vá para meu perfil no Facebook"
           matTooltip="Facebook"
           matTooltipPosition="above"
-          mat-fab
-          aria-label="Button with a Facebook icon"
+          href="#"
+          mat-button
         >
-          <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
-        </button>
+          <fa-icon
+            [icon]="['fab', 'facebook']"
+            size="2x"
+            [fixedWidth]="true"
+            [pulse]="true"
+          ></fa-icon>
+        </a>
 
-        <button
-          type="button"
+        <a
+          aria-label="Vá para meu perfil no Twitter"
           matTooltip="Twitter"
           matTooltipPosition="above"
-          mat-fab
-          aria-label="Button with a Twitter icon"
+          href="#"
+          mat-button
         >
-          <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
-        </button>
+          <fa-icon
+            [icon]="['fab', 'twitter']"
+            size="2x"
+            [fixedWidth]="true"
+            [pulse]="true"
+          ></fa-icon>
+        </a>
 
-        <button
-          type="button"
+        <a
+          aria-label="Vá para meu perfil no Github"
           matTooltip="Github"
           matTooltipPosition="above"
-          mat-fab
-          aria-label="Button with a Github icon"
+          href="#"
+          mat-button
         >
-          <fa-icon [icon]="['fab', 'github']"></fa-icon>
-        </button>
+          <fa-icon
+            [icon]="['fab', 'github']"
+            size="2x"
+            [fixedWidth]="true"
+            [pulse]="true"
+          ></fa-icon>
+        </a>
 
-        <button
-          type="button"
+        <a
+          aria-label="Vá para meu perfil no Instagram"
           matTooltip="Instagram"
           matTooltipPosition="above"
-          mat-fab
-          aria-label="Button with a Instagram icon"
+          href="#"
+          mat-button
         >
-          <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
-        </button>
+          <fa-icon
+            [icon]="['fab', 'instagram']"
+            size="2x"
+            [fixedWidth]="true"
+            [pulse]="true"
+          ></fa-icon>
+        </a>
 
-        <button
-          type="button"
+        <a
+          aria-label="Vá para meu perfil no YouTube"
           matTooltip="YouTube"
           matTooltipPosition="above"
-          mat-fab
-          aria-label="Button with a YouTube icon"
+          href="#"
+          mat-button
         >
-          <fa-icon [icon]="['fab', 'youtube']"></fa-icon>
-        </button>
+          <fa-icon
+            [icon]="['fab', 'youtube']"
+            size="2x"
+            [fixedWidth]="true"
+            [pulse]="true"
+          ></fa-icon>
+        </a>
       </div>
     </div>
   </div>
@@ -106,7 +147,7 @@
   <div class="w-full h-5/6 flex flex-col lg:w-2/5">
     <!-- Big profile image for side bar (desktop) -->
     <img
-      title="Foto de perfil"
+      aria-label="Foto de perfil"
       src="assets/img/rodrix_photo.jpg"
       class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block object-cover min-h-0"
     />
