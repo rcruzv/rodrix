@@ -83,6 +83,10 @@
           mat-button
         >
           <fa-icon
+            *skeleton="
+              isLoading;
+              className: ['rounded-full', 'inline-block', 'px-4', 'w-9', 'h-9']
+            "
             [icon]="['fas', 'fingerprint']"
             size="2x"
             [fixedWidth]="true"
@@ -98,6 +102,10 @@
           mat-button
         >
           <fa-icon
+            *skeleton="
+              isLoading;
+              className: ['rounded-full', 'inline-block', 'px-4', 'w-9', 'h-9']
+            "
             [icon]="['fab', 'linkedin']"
             size="2x"
             [fixedWidth]="true"
@@ -113,6 +121,10 @@
           mat-button
         >
           <fa-icon
+            *skeleton="
+              isLoading;
+              className: ['rounded-full', 'inline-block', 'px-4', 'w-9', 'h-9']
+            "
             [icon]="['fab', 'facebook']"
             size="2x"
             [fixedWidth]="true"
@@ -128,6 +140,10 @@
           mat-button
         >
           <fa-icon
+            *skeleton="
+              isLoading;
+              className: ['rounded-full', 'inline-block', 'px-4', 'w-9', 'h-9']
+            "
             [icon]="['fab', 'twitter']"
             size="2x"
             [fixedWidth]="true"
@@ -143,6 +159,10 @@
           mat-button
         >
           <fa-icon
+            *skeleton="
+              isLoading;
+              className: ['rounded-full', 'inline-block', 'px-4', 'w-9', 'h-9']
+            "
             [icon]="['fab', 'github']"
             size="2x"
             [fixedWidth]="true"
@@ -158,6 +178,10 @@
           mat-button
         >
           <fa-icon
+            *skeleton="
+              isLoading;
+              className: ['rounded-full', 'inline-block', 'px-4', 'w-9', 'h-9']
+            "
             [icon]="['fab', 'instagram']"
             size="2x"
             [fixedWidth]="true"
@@ -179,7 +203,15 @@
   </div>
 
   <!-- Pin to top right corner -->
-  <div class="absolute top-0 right-0 h-12 w-18 p-4">
-    <button type="button" class="js-change-theme focus:outline-none">🌙</button>
+  <div class="absolute top-0 right-0 h-12 w-12 p-4">
+    <button
+      *skeleton="isLoading; className: ['rounded-full', 'p-2']"
+      type="button"
+      class="focus:outline-none"
+    >
+      🌙
+    </button>
   </div>
+
+  <button (click)="load()">Load</button>
 </section>

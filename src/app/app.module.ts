@@ -18,6 +18,7 @@ import { IndexHeaderComponent } from './views/index/index-header/index-header.co
 
 /* Components */
 import { FooterComponent } from './components/footers/footer/footer.component';
+import { SkeletonComponent } from './components/skeleton/skeleton.component';
 
 /* Font Awesome */
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -25,12 +26,17 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
+/* Directives */
+import { SkeletonDirective } from './directives/skeleton.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     IndexHeaderComponent,
     FooterComponent,
+    SkeletonComponent,
+    SkeletonDirective
   ],
   imports: [
     BrowserModule,
@@ -39,7 +45,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
     BrowserAnimationsModule,
     AngularMaterialModule,
     ReactiveFormsModule,
-    FontAwesomeModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -50,4 +56,3 @@ export class AppModule {
     library.addIconPacks(fas, far, fab);
   }
 }
-
