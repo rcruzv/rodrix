@@ -1,5 +1,5 @@
 <section
-  class="max-w-4xl text-sky-500 flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
+  class="max-w-4xl text-sky-500 flex items-center justify-center min-h-screen flex-wrap mx-auto lg:my-0"
 >
   <!--Main Col-->
   <div
@@ -230,9 +230,17 @@
   <div
     *skeleton="
       isLoading;
-      className: ['rounded-lg', 'block', 'pt-2', 'w-full', 'h-5/6', 'lg:w-2/5']
+      className: [
+        'sm:hidden',
+        'rounded-lg',
+        'block',
+        'pt-2',
+        'w-full',
+        'h-5/6',
+        'lg:w-2/5'
+      ]
     "
-    class="w-full h-5/6 flex flex-col lg:w-2/5"
+    class="w-full h-5/6 flex flex-col lg:w-2/5 sm:hidden"
   >
     <!-- Big profile image for side bar (desktop) -->
     <img
