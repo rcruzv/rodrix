@@ -15,9 +15,9 @@
             'lg:hidden',
             'rounded-full',
             'block',
-            'pt-2',
             'w-48',
             'h-48',
+            'mx-auto',
             '-mt-16'
           ]
         "
@@ -27,7 +27,7 @@
       <h1
         *skeleton="
           isLoading;
-          className: ['rounded-lg', 'block', 'pt-2', 'w-32', 'h-9', 'mt-3']
+          className: ['rounded-lg', 'block', 'pt-2', 'w-full', 'h-9', 'mt-3']
         "
         class="text-3xl text-sky-900 font-bold pt-8 lg:pt-0"
       >
@@ -39,7 +39,7 @@
       <p
         *skeleton="
           isLoading;
-          className: ['rounded-lg', 'block', 'pt-2', 'w-32', 'h-9', 'mt-3']
+          className: ['rounded-lg', 'block', 'pt-2', 'w-full', 'h-9', 'mt-3']
         "
         class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"
       >
@@ -55,7 +55,7 @@
       <p
         *skeleton="
           isLoading;
-          className: ['rounded-lg', 'block', 'pt-2', 'w-32', 'h-9', 'mt-3']
+          className: ['rounded-lg', 'block', 'pt-2', 'w-full', 'h-9', 'mt-3']
         "
         class="pt-2 text-base flex items-center justify-center lg:justify-start"
       >
@@ -71,7 +71,7 @@
       <p
         *skeleton="
           isLoading;
-          className: ['rounded-lg', 'block', 'pt-2', 'w-32', 'h-9', 'mt-3']
+          className: ['rounded-lg', 'block', 'pt-2', 'w-full', 'h-9', 'mt-3']
         "
         class="pt-2 text-base flex items-center justify-center lg:justify-start"
       >
@@ -87,7 +87,7 @@
       <p
         *skeleton="
           isLoading;
-          className: ['rounded-lg', 'block', 'pt-2', 'w-32', 'h-9', 'mt-3']
+          className: ['rounded-lg', 'block', 'pt-2', 'w-full', 'h-9', 'mt-3']
         "
         class="pt-2 text-base flex items-center justify-center lg:justify-start"
       >
@@ -109,7 +109,7 @@
         class="pt-8 text-sm"
       >
         Olá! Meu nome é Rodrigo Vieira, sou um desenvolvedor Full Stack, que
-        gosta de desenvolver e aprender novas tecnologias.
+        gosta de programar e aprender novas tecnologias.
       </p>
 
       <div
@@ -130,7 +130,6 @@
             [icon]="['fas', 'fingerprint']"
             size="2x"
             [fixedWidth]="true"
-            [pulse]="true"
           ></fa-icon>
         </a>
 
@@ -138,7 +137,7 @@
           aria-label="Vá para meu perfil no LinkedIn"
           matTooltip="LinkedIn"
           matTooltipPosition="above"
-          href="#"
+          href="https://www.linkedin.com/in/rodrix/"
           mat-button
         >
           <fa-icon
@@ -149,7 +148,6 @@
             [icon]="['fab', 'linkedin']"
             size="2x"
             [fixedWidth]="true"
-            [pulse]="true"
           ></fa-icon>
         </a>
 
@@ -157,7 +155,7 @@
           aria-label="Vá para meu perfil no Facebook"
           matTooltip="Facebook"
           matTooltipPosition="above"
-          href="#"
+          href="https://www.facebook.com/rodrix.me/"
           mat-button
         >
           <fa-icon
@@ -168,7 +166,6 @@
             [icon]="['fab', 'facebook']"
             size="2x"
             [fixedWidth]="true"
-            [pulse]="true"
           ></fa-icon>
         </a>
 
@@ -176,7 +173,7 @@
           aria-label="Vá para meu perfil no Twitter"
           matTooltip="Twitter"
           matTooltipPosition="above"
-          href="#"
+          href="https://twitter.com/rcruzvieira"
           mat-button
         >
           <fa-icon
@@ -187,7 +184,6 @@
             [icon]="['fab', 'twitter']"
             size="2x"
             [fixedWidth]="true"
-            [pulse]="true"
           ></fa-icon>
         </a>
 
@@ -195,7 +191,7 @@
           aria-label="Vá para meu perfil no Github"
           matTooltip="Github"
           matTooltipPosition="above"
-          href="#"
+          href="https://github.com/rcruzv"
           mat-button
         >
           <fa-icon
@@ -206,7 +202,6 @@
             [icon]="['fab', 'github']"
             size="2x"
             [fixedWidth]="true"
-            [pulse]="true"
           ></fa-icon>
         </a>
 
@@ -214,7 +209,7 @@
           aria-label="Vá para meu perfil no Instagram"
           matTooltip="Instagram"
           matTooltipPosition="above"
-          href="#"
+          href="https://www.instagram.com/rcruzv/"
           mat-button
         >
           <fa-icon
@@ -225,7 +220,6 @@
             [icon]="['fab', 'instagram']"
             size="2x"
             [fixedWidth]="true"
-            [pulse]="true"
           ></fa-icon>
         </a>
       </div>
@@ -246,16 +240,5 @@
       src="assets/img/rodrix_photo.jpg"
       class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block object-cover min-h-0"
     />
-  </div>
-
-  <!-- Pin to top right corner -->
-  <div class="absolute top-0 right-0 h-12 w-12 p-4">
-    <button
-      *skeleton="isLoading; className: ['rounded-full', 'p-2']"
-      type="button"
-      class="focus:outline-none"
-    >
-      🌙
-    </button>
   </div>
 </section>
