@@ -17,7 +17,7 @@ export class IndexHeaderComponent implements OnInit {
     this.isLoading = true;
     setTimeout(() => {
       this.isLoading = false;
-    }, 10000);
+    }, 2000);
   }
 
 }

@@ -9,16 +9,38 @@
     <div class="p-4 md:p-12 text-center lg:text-left">
       <!-- Image for mobile view-->
       <div
+        *skeleton="
+          isLoading;
+          className: [
+            'lg:hidden',
+            'rounded-full',
+            'block',
+            'pt-2',
+            'w-48',
+            'h-48',
+            '-mt-16'
+          ]
+        "
         class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center bg-[url('assets/img/rodrix_photo.jpg')]"
       ></div>
 
-      <h1 class="text-3xl text-sky-900 font-bold pt-8 lg:pt-0">
+      <h1
+        *skeleton="
+          isLoading;
+          className: ['rounded-lg', 'block', 'pt-2', 'w-32', 'h-9', 'mt-3']
+        "
+        class="text-3xl text-sky-900 font-bold pt-8 lg:pt-0"
+      >
         Rodrigo Vieira
       </h1>
       <div
         class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-sky-500 opacity-25"
       ></div>
       <p
+        *skeleton="
+          isLoading;
+          className: ['rounded-lg', 'block', 'pt-2', 'w-32', 'h-9', 'mt-3']
+        "
         class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"
       >
         <fa-icon
@@ -31,6 +53,10 @@
         Full Stack Developer
       </p>
       <p
+        *skeleton="
+          isLoading;
+          className: ['rounded-lg', 'block', 'pt-2', 'w-32', 'h-9', 'mt-3']
+        "
         class="pt-2 text-base flex items-center justify-center lg:justify-start"
       >
         <fa-icon
@@ -43,6 +69,10 @@
         40 Anos
       </p>
       <p
+        *skeleton="
+          isLoading;
+          className: ['rounded-lg', 'block', 'pt-2', 'w-32', 'h-9', 'mt-3']
+        "
         class="pt-2 text-base flex items-center justify-center lg:justify-start"
       >
         <fa-icon
@@ -55,6 +85,10 @@
         +55 (11) 9 5477-7856
       </p>
       <p
+        *skeleton="
+          isLoading;
+          className: ['rounded-lg', 'block', 'pt-2', 'w-32', 'h-9', 'mt-3']
+        "
         class="pt-2 text-base flex items-center justify-center lg:justify-start"
       >
         <fa-icon
@@ -67,7 +101,13 @@
         cvieira.rodrigo@gmail.com
       </p>
 
-      <p class="pt-8 text-sm">
+      <p
+        *skeleton="
+          isLoading;
+          className: ['rounded-lg', 'block', 'pt-8', 'w-full', 'h-32', 'mt-3']
+        "
+        class="pt-8 text-sm"
+      >
         Olá! Meu nome é Rodrigo Vieira, sou um desenvolvedor Full Stack, que
         gosta de desenvolver e aprender novas tecnologias.
       </p>
@@ -193,7 +233,13 @@
   </div>
 
   <!--Img Col-->
-  <div class="w-full h-5/6 flex flex-col lg:w-2/5">
+  <div
+    *skeleton="
+      isLoading;
+      className: ['rounded-lg', 'block', 'pt-2', 'w-full', 'h-5/6', 'lg:w-2/5']
+    "
+    class="w-full h-5/6 flex flex-col lg:w-2/5"
+  >
     <!-- Big profile image for side bar (desktop) -->
     <img
       aria-label="Foto de perfil"
@@ -212,6 +258,4 @@
       🌙
     </button>
   </div>
-
-  <button (click)="load()">Load</button>
 </section>
