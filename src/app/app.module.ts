@@ -17,7 +17,6 @@ import { IndexComponent } from './views/index/index.component';
 import { IndexHeaderComponent } from './views/index/index-header/index-header.component';
 
 /* Components */
-import { FooterComponent } from './components/footers/footer/footer.component';
 import { SkeletonComponent } from './components/skeleton/skeleton.component';
 
 /* Font Awesome */
@@ -34,7 +33,6 @@ import { SkeletonDirective } from './directives/skeleton.directive';
     AppComponent,
     IndexComponent,
     IndexHeaderComponent,
-    FooterComponent,
     SkeletonComponent,
     SkeletonDirective
   ],
