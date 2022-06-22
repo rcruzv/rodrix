@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { IndexComponent } from './index.component';
+import { ExtratoComponent } from './extrato.component';
 
-describe('IndexComponent', () => {
-  let component: IndexComponent;
-  let fixture: ComponentFixture<IndexComponent>;
+describe('ExtratoComponent', () => {
+  let component: ExtratoComponent;
+  let fixture: ComponentFixture<ExtratoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IndexComponent ]
+      declarations: [ ExtratoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IndexComponent);
+    fixture = TestBed.createComponent(ExtratoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

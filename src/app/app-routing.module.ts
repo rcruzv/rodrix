@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { IndexComponent } from './views/index/index.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
-    path: '', component: IndexComponent,
+    path: '', component: AppComponent,
   },
   { path: '**', redirectTo: '' }
 ];

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import { AppComponent } from './app.component';
 
 /* Routing */
@@ -11,10 +11,6 @@ import { AngularMaterialModule } from './angular-material.module';
 
 /* FormsModule */
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-/* No Layout views */
-import { IndexComponent } from './views/index/index.component';
-import { IndexHeaderComponent } from './views/index/index-header/index-header.component';
 
 /* Components */
 import { SkeletonComponent } from './components/skeleton/skeleton.component';
@@ -28,12 +24,22 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 /* Directives */
 import { SkeletonDirective } from './directives/skeleton.directive';
 
+/* Alura */
+import { NovaTransferenciaComponent } from './components/nova-transferencia/nova-transferencia.component';
+import { ExtratoComponent } from './components/extrato/extrato.component';
+
+/* Locale */
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localePt, 'pt');
+
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent,
-    IndexHeaderComponent,
     SkeletonComponent,
+    NovaTransferenciaComponent,
+    ExtratoComponent,
     SkeletonDirective
   ],
   imports: [
@@ -45,7 +51,10 @@ import { SkeletonDirective } from './directives/skeleton.directive';
     ReactiveFormsModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'pt' },
+    { provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' }
+  ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

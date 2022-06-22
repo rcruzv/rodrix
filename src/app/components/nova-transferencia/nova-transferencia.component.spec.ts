@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { IndexHeaderComponent } from './index-header.component';
+import { NovaTransferenciaComponent } from './nova-transferencia.component';
 
-describe('IndexHeaderComponent', () => {
-  let component: IndexHeaderComponent;
-  let fixture: ComponentFixture<IndexHeaderComponent>;
+describe('NovaTransferenciaComponent', () => {
+  let component: NovaTransferenciaComponent;
+  let fixture: ComponentFixture<NovaTransferenciaComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IndexHeaderComponent ]
+      declarations: [ NovaTransferenciaComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IndexHeaderComponent);
+    fixture = TestBed.createComponent(NovaTransferenciaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

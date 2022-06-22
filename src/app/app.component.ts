@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {
   animate, state, style, transition, trigger
 } from '@angular/animations';
+import { TransferenciaService } from './services/transferencia.service';
 
 @Component({
   selector: 'app-root',
@@ -17,5 +18,11 @@ import {
 })
 export class AppComponent {
   title = 'rodrix';
-}
 
+  constructor(private service: TransferenciaService) {
+  }
+
+  transferir($event: any) {
+    this.service.adicionar($event);
+  }
+}
