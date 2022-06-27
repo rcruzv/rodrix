@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { ExtratoComponent } from './components/extrato/extrato.component';
+import { NovaTransferenciaComponent } from './components/nova-transferencia/nova-transferencia.component';
 
 const routes: Routes = [
   {
-    path: '', component: AppComponent,
+    path: '', redirectTo: 'extrato', pathMatch: 'full',
   },
-  { path: '**', redirectTo: '' }
+  {
+    path: 'extrato', component: ExtratoComponent
+  },
+  {
+    path: 'nova-transferencia', component: NovaTransferenciaComponent
+  }
 ];
 
 @NgModule({

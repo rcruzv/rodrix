@@ -31,6 +31,7 @@ import { ExtratoComponent } from './components/extrato/extrato.component';
 /* Locale */
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 registerLocaleData(localePt, 'pt');
 
@@ -49,7 +50,8 @@ registerLocaleData(localePt, 'pt');
     BrowserAnimationsModule,
     AngularMaterialModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
