@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
-import { AppComponent } from './app.component';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, DEFAULT_CURRENCY_CODE, Component } from '@angular/core';
 
 /* Routing */
 import { AppRoutingModule } from './app-routing.module';
@@ -12,36 +11,27 @@ import { AngularMaterialModule } from './angular-material.module';
 /* FormsModule */
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-/* Components */
-import { SkeletonComponent } from './components/skeleton/skeleton.component';
-
 /* Font Awesome */
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
-/* Directives */
-import { SkeletonDirective } from './directives/skeleton.directive';
-
-/* Alura */
-import { NovaTransferenciaComponent } from './components/nova-transferencia/nova-transferencia.component';
-import { ExtratoComponent } from './components/extrato/extrato.component';
-
 /* Locale */
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+
+// Components
+import { AppComponent } from './app.component';
+import { UserComponent } from './user/user.component';
 
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkeletonComponent,
-    NovaTransferenciaComponent,
-    ExtratoComponent,
-    SkeletonDirective
+    UserComponent
   ],
   imports: [
     BrowserModule,
