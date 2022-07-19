@@ -25,13 +25,15 @@ import { HttpClientModule } from '@angular/common/http';
 // Components
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
+import { NavComponent } from './nav/nav.component';
 
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,6 @@ registerLocaleData(localePt, 'pt');
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    ReactiveFormsModule,
     FontAwesomeModule,
     HttpClientModule
   ],
