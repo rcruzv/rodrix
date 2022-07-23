@@ -1,0 +1,23 @@
+{
+  "Menu": [
+    {
+      "title": "Dashboard",
+      "path": "/",
+      "icon": ["fas", "mattress-pillow"],
+      "children": [
+        {
+          "title": "Nível 02",
+          "path": "/",
+          "icon": ["fas", "mattress-pillow"],
+          "children": []
+        },
+        {
+          "title": "Nível 03",
+          "path": "/",
+          "icon": ["fas", "mattress-pillow"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

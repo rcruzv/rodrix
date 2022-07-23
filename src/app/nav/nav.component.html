@@ -2,32 +2,153 @@
 <label for="hamburger" class="hamburger">
   <i></i>
   <span id="text">
-    <span id="close">close</span>
     <span id="open">menu</span>
   </span>
 </label>
-<nav class="primnav">
-  <ul>
+
+<nav class="fixed h-14 w-screen flex flex-col pt-14 overflow-hidden">
+  <mat-accordion class="m-20">
+    <div class="mb-2">
+      <mat-expansion-panel
+        disabled
+        hideToggle
+        class="bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg w-fit"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="text-white">This is the expansion title</span>
+          </mat-panel-title>
+          <mat-panel-description class="flex justify-end">
+            <fa-icon
+              [fixedWidth]="true"
+              [icon]="['fas', 'mattress-pillow']"
+              class="mx-3 text-white"
+              size="lg"
+            ></fa-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-expansion-panel
+          hideToggle
+          class="bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg w-fit"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> This is the expansion title </mat-panel-title>
+            <mat-panel-description>
+              This is a summary of the content
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </mat-expansion-panel>
+    </div>
+
+    <div class="mb-2">
+      <mat-expansion-panel
+        hideToggle
+        class="bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg w-fit my-2"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> This is the expansion title </mat-panel-title>
+          <mat-panel-description class="flex justify-end">
+            <fa-icon
+              [fixedWidth]="true"
+              [icon]="['fas', 'mattress-pillow']"
+              class="mx-3"
+              size="lg"
+            ></fa-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-expansion-panel
+          hideToggle
+          class="bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg w-fit"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> This is the expansion title </mat-panel-title>
+            <mat-panel-description>
+              This is a summary of the content
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </mat-expansion-panel>
+    </div>
+  </mat-accordion>
+
+  <ng-template #navTemplate let-Menu>
+    <ul>
+      <li *ngFor="let item of Menu">
+        <a [routerLink]="[item.path]" class="w-56 h-10">
+          <fa-icon
+            [fixedWidth]="true"
+            [icon]="item.icon"
+            class="mx-3"
+            size="lg"
+          ></fa-icon>
+          {{ item.title }}
+        </a>
+        <ng-container
+          *ngTemplateOutlet="navTemplate; context: { $implicit: item.children }"
+        ></ng-container>
+      </li>
+    </ul>
+  </ng-template>
+  <ng-container
+    *ngTemplateOutlet="navTemplate; context: { $implicit: Menu }"
+  ></ng-container>
+
+  <!-- <ul class="p-8">
     <li>
-      <a href="#dashboard">
-        <svg class="icon"><use xlink:href="#icon-th-large"></use></svg>
+      <a href="#dashboard" class="w-56 h-10">
+        <fa-icon
+          [fixedWidth]="true"
+          [icon]="['fas', 'mattress-pillow']"
+          class="mx-3"
+          size="lg"
+        ></fa-icon>
         Dashboard
       </a>
     </li>
+
     <li>
-      <a href="#mail">
-        <svg class="icon"><use xlink:href="#icon-mail_outline"></use></svg> Mail
-        <div class="tag">53</div>
+      <a href="#mail" class="w-64 h-10">
+        <fa-icon
+          [fixedWidth]="true"
+          [icon]="['fas', 'envelope']"
+          class="mx-3"
+          size="lg"
+        ></fa-icon>
+        Mail
+        <div class="tag">99</div>
       </a>
-      <ul class="secnav">
+
+      <ul class="primnav p-8">
         <li>
-          <a href="#inbox">Inbox</a>
+          <a href="#inbox" class="w-64 h-10">
+            <fa-icon
+              [fixedWidth]="true"
+              [icon]="['fas', 'envelope']"
+              class="mx-3"
+              size="lg"
+            ></fa-icon>
+            Inbox
+            <div class="tag">99</div>
+          </a>
         </li>
         <li>
-          <a href="#sent">Sent</a>
+          <a href="#sent" class="w-56 h-10">
+            <fa-icon
+              [fixedWidth]="true"
+              [icon]="['fas', 'envelope']"
+              class="mx-3"
+              size="lg"
+            ></fa-icon>
+            Sent
+            <div class="tag">53</div>
+          </a>
         </li>
       </ul>
     </li>
+
     <li>
       <a href="#notifications">
         <svg class="icon"><use xlink:href="#icon-bell2"></use></svg>
@@ -35,6 +156,7 @@
         <div class="tag">17</div>
       </a>
     </li>
+
     <li>
       <a href="#sysadmin">
         <svg class="icon"><use xlink:href="#icon-equalizer"></use></svg> System
@@ -52,5 +174,19 @@
         </li>
       </ul>
     </li>
-  </ul>
+  </ul> -->
+
+  <!-- <ul *ngIf="Menu">
+    <li *ngFor="let item of Menu">
+      <a [routerLink]="[item.path]" class="w-56 h-10">
+        <fa-icon
+          [fixedWidth]="true"
+          [icon]="item.icon"
+          class="mx-3"
+          size="lg"
+        ></fa-icon>
+        {{ item.title }}
+      </a>
+    </li>
+  </ul> -->
 </nav>

@@ -1,22 +1,8 @@
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.primnav {
-  position: fixed;
-  height: 58px;
-  width: 100vw;
+nav {
   font-size: 0.8em;
   text-transform: uppercase;
   background-color: lighten(#0070cc, 5%);
-  display: flex;
-  flex-direction: column;
   transition: height 246ms 0.5s ease;
-  padding-top: 58px;
-  overflow-x: hidden;
-  overflow-y: hidden;
   box-sizing: border-box;
   z-index: 1;
 
@@ -31,7 +17,6 @@ ul {
     position: relative;
 
     .tag {
-      color: white;
       padding: 0 0.5em;
       border-radius: 2em;
       margin-left: auto;
@@ -45,32 +30,6 @@ ul {
       text-decoration: none;
     }
   }
-  .icon {
-    height: 20px;
-    flex-shrink: 0;
-    width: 20px;
-    padding: 19px;
-    margin-right: 5px;
-    padding-bottom: 15px;
-  }
-}
-
-.secnav {
-  margin-left: 63px;
-  border-left: 1px solid white;
-  overflow: hidden;
-
-  li {
-    max-height: 100px;
-    transition: max-height 0.1s;
-
-    a {
-      text-transform: initial;
-      display: block;
-      color: inherit;
-      padding: 0.75em 10px;
-    }
-  }
 }
 
 /** hamburger */
@@ -78,7 +37,7 @@ ul {
 input.hamburger {
   display: none;
   &:checked {
-    & ~ nav.primnav {
+    & ~ nav {
       height: 100vh;
     }
     & ~ label {
@@ -91,10 +50,6 @@ input.hamburger {
         &:after {
           transform: translate(-50%, -50%) rotate(-45deg);
         }
-      }
-      #close {
-        color: white;
-        width: 100%;
       }
       #open {
         color: rgba(0, 0, 0, 0);
@@ -114,7 +69,6 @@ label.hamburger {
     cursor: pointer;
   }
   #text {
-    #close,
     #open {
       text-transform: uppercase;
       position: absolute;
@@ -123,11 +77,6 @@ label.hamburger {
       overflow: hidden;
       transition: width 0.25s 0.35s, color 0.45s 0.35s;
       font-size: 6px;
-    }
-    #close {
-      color: white;
-      right: 0;
-      width: 0;
     }
     #open {
       color: white;

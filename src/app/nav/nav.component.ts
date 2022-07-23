@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import MenuItems from './nav.json'
+import { NavModel } from './nav.model';
 
 @Component({
   selector: 'app-nav',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
+  // data
+  Menu: NavModel[];
 
-  constructor() { }
+  constructor() {
+    this.Menu = JSON.parse(JSON.stringify(MenuItems.Menu));
+    console.log(this.Menu);
+  }
 
   ngOnInit() {
+
   }
 
 }
